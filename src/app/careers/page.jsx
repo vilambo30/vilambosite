@@ -44,15 +44,15 @@ const Careers = () => {
   const jobOpenings = [
     {
       id: 1,
-      title: "Job Search Speacilist",
+      title: "Job Search Specialist (Reverse Recruiter)",
       location: "Remote",
       type: "Full-time",
       description:
-        "Join our team to develop cutting-edge AI solutions for businesses across industries.",
+        "Help revolutionize the job search process with our innovative reverse recruiting approach.",
     },
     {
       id: 2,
-      title: "Job Search Speacilist Intern",
+      title: "Job Search Specialist (Reverse Recruiter) Intern",
       location: "Remote",
       type: "Internship",
       description:
