@@ -54,7 +54,7 @@ export const metadata = {
     siteName: "Vilambo",
     images: [
       {
-        url: "https://www.vilambo.com/vilambo-ogimage.png",
+        url: "https://www.vilambo.com/ogimage.png",
         width: 1200,
         height: 630,
       },
@@ -67,7 +67,7 @@ export const metadata = {
     title: "Vilambo Private Limited",
     description:
       "Explore Vilambo's innovative AI and recruiting tech solutions. Empowering businesses and individuals with technology that makes a difference.",
-    images: ["https://www.vilambo.com/vilambo-ogimage.png"],
+    images: ["https://www.vilambo.com/ogimage.png"],
   },
   robots: {
     index: true,
