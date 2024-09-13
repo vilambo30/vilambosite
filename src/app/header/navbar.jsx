@@ -136,7 +136,7 @@ const Navbar = () => {
               <img
                 src="/logo.svg"
                 alt="logo"
-                className="w-[250px] lg:h-[250px] h-[80px]"
+                className="w-[250px] h-[80px] lg:h-[250px] object-cover"
               />
             </Link>
           </div>

@@ -35,7 +35,7 @@ const AboutUs = () => {
             challenges with tailored solutions.
           </p>
           <div className="grid sm:grid-cols-2 gap-6">
-            <div className="space-y-6 p-4 rounded-xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-900">
+            <div className="space-y-6 p-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
               <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@ const AboutUs = () => {
                 new frontiers of efficiency and innovation.
               </p>
             </div>
-            <div className="space-y-6 p-4 rounded-xl bg-white dark:bg-gray-950 border border-gray-100 dark:border-gray-900">
+            <div className="space-y-6 p-4 rounded-xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700">
               <span className="rounded-full bg-gray-900 dark:bg-gray-100 text-gray-100 dark:text-gray-900 w-max p-3 flex">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

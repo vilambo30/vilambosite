@@ -7,12 +7,12 @@ const ServiceCard = ({ title, description, points }) => {
       <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
         {title}
       </h2>
-      <p className="text-gray-600 dark:text-gray-300">{description}</p>
+      <p className="text-gray-600 dark:text-gray-100">{description}</p>
       <ul className="space-y-2">
         {points.map((point, index) => (
           <li key={index} className="flex items-start space-x-2">
-            <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
-            <span className="text-gray-700 dark:text-gray-200">{point}</span>
+            <CheckCircle className="w-5 h-5 text-orange-500 flex-shrink-0 mt-1" />
+            <span className="text-gray-700 dark:text-gray-100">{point}</span>
           </li>
         ))}
       </ul>
@@ -63,7 +63,7 @@ const Services = () => {
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Empowering businesses and individuals
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-100 mx-auto">
             Our services are tailored to meet the evolving needs of the modern
             digital landscape.
           </p>

@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { InstagramIcon } from "lucide-react";
+import { InstagramIcon, LoaderCircleIcon } from "lucide-react";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
@@ -85,8 +85,10 @@ const footerBlocks = [
 const FooterBlock = () => {
   const form = useRef();
   const [message, setMessage] = useState("");
+  const [loader, setLoader] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoader(true);
 
     emailjs
       .sendForm(
@@ -100,6 +102,7 @@ const FooterBlock = () => {
           console.log(result.text);
           setMessage("Message sent successfully");
           e.target.reset();
+          setLoader(false);
         },
         (error) => {
           console.log(error.text);
@@ -196,22 +199,28 @@ const FooterBlock = () => {
               <input
                 type="text"
                 name="name"
+                required
                 className="w-full outline-none px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-100"
                 placeholder="Your Name"
               />
               <input
                 type="email"
                 name="email"
+                required
                 className="w-full outline-none px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 text-gray-100"
                 placeholder="Your Email"
               />
               <textarea
                 name="message"
+                required
                 className="w-full outline-none px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 h-24 resize-none text-gray-100"
                 placeholder="Your Message"
               ></textarea>
-              <button className="w-full py-2 px-4 bg-orange-600 hover:bg-orange-700 text-white rounded-md transition duration-300 ease-in-out">
-                Send Message
+              <button
+                className="w-full py-2 px-4 bg-orange-600 hover:bg-orange-700 text-white rounded-md transition duration-300 ease-in-out"
+                disabled={loader}
+              >
+                {loader ? "Sending...." : "Send Message"}
               </button>
             </form>
           </div>
