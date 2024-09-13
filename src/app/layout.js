@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: {
-    default: "Vilambo | Innovative Tech Solutions",
+    default: "Vilambo Private Limited",
     template: "%s | Vilambo",
   },
   description:
@@ -47,14 +47,14 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Vilambo | Innovative Tech Solutions",
+    title: "Vilambo Private Limited",
     description:
       "Discover cutting-edge AI solutions and transformative recruiting services at Vilambo. We're crafting technology that matters for businesses and individuals alike.",
     url: "https://www.vilambo.com",
     siteName: "Vilambo",
     images: [
       {
-        url: "https://www.vilambo.com/og_vilambo.png",
+        url: "https://www.vilambo.com/logo.svg",
         width: 1200,
         height: 630,
       },
@@ -64,10 +64,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vilambo | Innovative Tech Solutions",
+    title: "Vilambo Private Limited",
     description:
       "Explore Vilambo's innovative AI and recruiting tech solutions. Empowering businesses and individuals with technology that makes a difference.",
-    images: ["https://www.vilambo.com/og_vilambo.png"],
+    images: ["https://www.vilambo.com/logo.svg"],
   },
   robots: {
     index: true,
@@ -115,7 +115,7 @@ export default function RootLayout({ children }) {
               url: "https://www.vilambo.com",
               logo: "https://www.vilambo.com/logo.svg",
               description:
-                "Vilambo crafts innovative technology solutions, specializing in human-centric AI and reverse recruiting services for businesses and individuals across industries.",
+                "Vilambo: Empowering businesses with human-centered AI bots and revolutionizing job searches through our Recruform reverse recruiting service. Tech solutions that truly matter.",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Nalgonda",
