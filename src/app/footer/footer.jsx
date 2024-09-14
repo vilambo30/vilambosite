@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { InstagramIcon, LoaderCircleIcon } from "lucide-react";
+import { FacebookIcon, LoaderCircleIcon } from "lucide-react";
 import {
   InstagramLogoIcon,
   LinkedInLogoIcon,
@@ -253,6 +253,14 @@ const FooterBlock = () => {
               target="_blank"
             >
               <InstagramLogoIcon className="w-5 h-5" />
+            </a>
+            <a
+              href="https://www.facebook.com/vilamboofficial/"
+              aria-label="social link"
+              rel="noreferer"
+              target="_blank"
+            >
+              <FacebookIcon className="w-5 h-5" />
             </a>
           </div>
         </div>
